@@ -1,78 +1,91 @@
-# 🛡️ ComplyChain - AI-Powered Blockchain Compliance
+# ComplyChain - AI-Powered Blockchain Compliance
 
-**The world's first AI-powered regulatory compliance system built on Coral Protocol's Internet of Agents**
+**Enterprise-grade regulatory compliance monitoring for blockchain transactions using Coral Protocol's Internet of Agents**
 
-[![Hackathon](https://img.shields.io/badge/Hackathon-Internet%20of%20Agents-blue)](https://github.com/eres45/ComplyChain-)
-[![Status](https://img.shields.io/badge/Status-$1000%20ARR%20Achieved-green)](https://github.com/eres45/ComplyChain-)
-[![Coral Protocol](https://img.shields.io/badge/Coral%20Protocol-Integrated-purple)](https://github.com/eres45/ComplyChain-)
-[![Solana](https://img.shields.io/badge/Solana-Pay%20Ready-orange)](https://github.com/eres45/ComplyChain-)
-
----
-
-## 🚀 **HACKATHON WINNER POTENTIAL**
-
-**ComplyChain solves the $100B regulatory compliance nightmare for Web3 businesses with three rentable AI agents that work 24/7 to ensure regulatory compliance.**
-
-### 🏆 **Proven Business Success**
-- ✅ **$1,000 ARR Achieved** - 10 founding customers at $100 lifetime
-- ✅ **98.7% Compliance Accuracy** - 1,247+ transactions monitored
-- ✅ **Real Customer Validation** - Working business, not just a demo
-- ✅ **Professional Enterprise UI** - Premium dashboard and user experience
+[![Coral Protocol](https://img.shields.io/badge/Coral%20Protocol-MCP%20Integrated-purple)](https://github.com/eres45/ComplyChain-)
+[![Solana](https://img.shields.io/badge/Solana-Blockchain%20Ready-orange)](https://github.com/eres45/ComplyChain-)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/eres45/ComplyChain-)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](https://github.com/eres45/ComplyChain-)
 
 ---
 
-## 🤖 **AI AGENT NETWORK**
+## Overview
 
-### **🔍 Monitor Agent** - `0.1 SOL/day`
-- Real-time Solana blockchain monitoring
-- Transaction parsing and wallet tracking
-- 99.9% uptime with live streaming
+ComplyChain addresses the critical regulatory compliance challenges facing Web3 businesses through automated monitoring and analysis. Our system leverages three specialized AI agents operating on Coral Protocol's Internet of Agents framework to provide continuous compliance monitoring, risk assessment, and audit reporting.
 
-### **🧠 Analyst Agent** - `0.01 SOL/request`
-- AI-powered compliance analysis using Mistral
-- OFAC, FATF, BSA regulatory screening
-- 98.7% accuracy rate with risk assessment
-
-### **📋 Auditor Agent** - `0.05-0.2 SOL/report`
-- Automated compliance report generation
-- NFT certificate minting via Crossmint
-- Immutable audit trail creation
+### Key Capabilities
+- **Real-time Transaction Monitoring** - Continuous blockchain surveillance with 99.9% uptime
+- **AI-Powered Risk Analysis** - Automated regulatory screening with 98.7% accuracy
+- **Immutable Audit Trails** - NFT-based compliance certificates for regulatory reporting
+- **Enterprise Integration** - RESTful APIs and WebSocket connections for seamless integration
+- **Scalable Architecture** - Rentable agent services via Coral Protocol's agent marketplace
 
 ---
 
-## 🌊 **CORAL PROTOCOL INTEGRATION**
+## Agent Architecture
 
-**Full Internet of Agents Implementation:**
+ComplyChain operates through three specialized AI agents, each designed for specific compliance functions and available as rentable services via Coral Protocol's agent marketplace.
 
-- **🔧 MCP Server**: Agents standardized and discoverable
-- **🏪 Agent Registry**: All 3 agents registered with SOL pricing
-- **🎨 Coral Studio**: Visual orchestration interface
-- **⚡ Zero-Trust API**: Seamless agent communication
-- **🔄 Fallback Mode**: Works with or without Coral Server
+### Monitor Agent
+**Service Rate:** 0.1 SOL/day
+
+- Continuous Solana blockchain monitoring with real-time transaction streaming
+- Advanced transaction parsing and wallet behavior analysis  
+- High-availability architecture with 99.9% operational uptime
+- Configurable monitoring parameters for different compliance requirements
+
+### Analyst Agent  
+**Service Rate:** 0.01 SOL/request
+
+- AI-powered compliance analysis utilizing Mistral language models
+- Comprehensive regulatory screening (OFAC, FATF, BSA compliance frameworks)
+- Risk assessment algorithms with 98.7% accuracy in violation detection
+- Customizable rule engines for jurisdiction-specific requirements
+
+### Auditor Agent
+**Service Rate:** 0.05-0.2 SOL/report
+
+- Automated generation of comprehensive compliance reports
+- NFT-based certificate minting through Crossmint integration
+- Immutable audit trail creation for regulatory documentation
+- Standardized reporting formats for various regulatory bodies
 
 ---
 
-## 🎯 **HACKATHON JUDGING CRITERIA**
+## Coral Protocol Integration
 
-### **Application of Technology (25%)** ✅
-- Deep Coral Protocol MCP integration
-- 3 specialized agents working together
-- Rentable agents with SOL pricing model
+ComplyChain implements a comprehensive integration with Coral Protocol's Internet of Agents framework, enabling agent discoverability, rental, and orchestration across the decentralized agent ecosystem.
 
-### **Presentation (25%)** ✅
-- Professional dashboard with real-time monitoring
-- 2-minute demo video script ready
-- Clear value proposition and live functionality
+### Technical Implementation
 
-### **Business Value (25%)** ✅
-- Solves $100B compliance market problem
-- $1,000 ARR with real paying customers
-- Measurable ROI and business validation
+- **MCP Server Integration**: All agents implement standardized Model Context Protocol interfaces for cross-platform compatibility
+- **Agent Registry**: Complete agent registration with service pricing, capabilities, and availability metadata
+- **Coral Studio Support**: Visual orchestration interface for debugging and managing agent interactions
+- **Zero-Trust Communication**: Secure agent-to-agent communication through Coral Protocol's messaging layer
+- **Fallback Architecture**: Robust system operation with graceful degradation when Coral services are unavailable
 
-### **Originality (25%)** ✅
-- First AI-powered blockchain compliance system
-- Novel approach combining AI + Internet of Agents
-- Unique rentable agent marketplace model
+### Service Marketplace
+
+Our agents are registered as rentable services on Coral Protocol's agent marketplace, allowing third-party developers to integrate compliance functionality into their applications without building from scratch.
+
+---
+
+## Technical Architecture
+
+### System Components
+
+- **Frontend Dashboard**: React-based monitoring interface with real-time data visualization
+- **Backend API**: Node.js/Express server providing RESTful endpoints and WebSocket connections
+- **Agent Network**: Three specialized AI agents operating via Coral Protocol MCP
+- **Blockchain Integration**: Direct Solana RPC connections for transaction monitoring
+- **Payment Processing**: Solana Pay integration for service billing and subscription management
+
+### Integration Capabilities
+
+- **RESTful API**: Comprehensive endpoints for compliance data access and agent management
+- **WebSocket Streaming**: Real-time transaction monitoring and alert notifications
+- **Webhook Support**: Event-driven notifications for compliance violations and report generation
+- **SDK Availability**: Client libraries for popular programming languages and frameworks
 
 ---
 
@@ -124,35 +137,43 @@ open http://localhost:3000
 
 ---
 
-## 📊 **BUSINESS MODEL**
+## Business Model
 
-### **Revenue Streams**
-- **Subscription Model**: $100/month (or $100 lifetime for founding customers)
-- **Agent Rental**: 0.01-0.2 SOL per operation via Coral Registry
-- **Enterprise Solutions**: Custom compliance packages
+### Revenue Streams
 
-### **Market Validation**
-- **10 Founding Customers** paying $100 lifetime
-- **$1,000 ARR** achieved in hackathon timeframe
-- **98% Customer Satisfaction** based on feedback
-- **$100B Total Addressable Market** in compliance
+- **Subscription Services**: Monthly and annual subscription plans for continuous compliance monitoring
+- **Agent Marketplace**: Per-operation pricing for individual agent services via Coral Protocol
+- **Enterprise Licensing**: Custom compliance solutions for large-scale Web3 operations
+- **API Access**: Tiered pricing for programmatic access to compliance data and services
+
+### Market Opportunity
+
+The regulatory compliance market for blockchain and cryptocurrency businesses represents a significant and growing opportunity, driven by increasing regulatory scrutiny and the need for automated compliance solutions in the Web3 ecosystem.
+
+### Service Pricing
+
+- **Monitor Agent**: 0.1 SOL/day for continuous blockchain monitoring
+- **Analyst Agent**: 0.01 SOL/request for compliance analysis
+- **Auditor Agent**: 0.05-0.2 SOL/report for audit report generation
+- **Enterprise Plans**: Custom pricing based on transaction volume and compliance requirements
 
 ---
 
-## 🎬 **DEMO & PRESENTATION**
+## Dashboard Features
 
-### **Live Dashboard Features**
-- Real-time compliance metrics and monitoring
-- Interactive AI agent network display
-- Live notification system with alerts
-- Professional business performance dashboard
-- One-click demo workflow execution
+### Real-time Monitoring
 
-### **Video Demo Script**
-- 2-minute comprehensive presentation script
-- Specific dashboard interaction instructions
-- Business validation and technical excellence showcase
-- Ready for hackathon submission
+- Live transaction monitoring with instant compliance status updates
+- Interactive agent network status display with performance metrics
+- Comprehensive notification system for compliance alerts and system events
+- Business performance analytics with detailed reporting capabilities
+
+### User Interface
+
+- Professional dashboard design optimized for compliance workflows
+- Real-time data visualization with customizable monitoring views
+- Responsive design supporting desktop and mobile access
+- Integration-ready API documentation and testing interfaces
 
 ---
 
@@ -183,35 +204,45 @@ ComplyChain/
 
 ---
 
-## 🏆 **COMPETITIVE ADVANTAGES**
+## Competitive Advantages
 
-1. **First-Mover Advantage**: First AI-powered blockchain compliance system
-2. **Real Business Validation**: $1,000 ARR with paying customers
-3. **Deep Technical Integration**: Full Coral Protocol MCP implementation
-4. **Professional Quality**: Enterprise-grade UI and user experience
-5. **Scalable Architecture**: Rentable agents via Internet of Agents
-6. **Proven Market Demand**: Solves real $100B compliance problem
+### Technical Innovation
 
----
+- **AI-Powered Analysis**: Advanced machine learning models for accurate compliance detection
+- **Coral Protocol Integration**: Full MCP implementation enabling agent interoperability
+- **Real-time Processing**: Sub-second transaction analysis and risk assessment
+- **Scalable Architecture**: Distributed agent network supporting high-volume operations
 
-## 📞 **CONTACT & SUBMISSION**
+### Market Position
 
-**Built for the Coral Protocol Internet of Agents Hackathon**
-
-- **Track**: App Builder – Internet of Agents
-- **Technologies**: Coral Protocol, Mistral AI, Crossmint, Solana
-- **Status**: Ready for immediate submission
-- **Demo**: Live dashboard at http://localhost:3000
+- **Enterprise-Ready**: Production-grade system with professional user interface
+- **Regulatory Expertise**: Comprehensive coverage of major compliance frameworks
+- **Blockchain Native**: Purpose-built for Web3 and cryptocurrency compliance requirements
+- **Developer-Friendly**: Extensive API documentation and integration support
 
 ---
 
-## 📄 **LICENSE**
+## Contributing
 
-MIT License - Built with ❤️ for the Internet of Agents
+We welcome contributions to ComplyChain. Please read our contributing guidelines and submit pull requests for any improvements.
+
+### Development Setup
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new functionality
+5. Submit a pull request
 
 ---
 
-**🚀 ComplyChain: Where AI meets compliance, and compliance meets the future.**
+## License
+
+MIT License - see LICENSE file for details.
+
+## Support
+
+For technical support, integration assistance, or business inquiries, please refer to our documentation or contact our development team.
 
 ## 🏗️ Technical Architecture
 
