@@ -1,0 +1,69 @@
+# ComplyChain Agents Registry Configuration for Coral Protocol
+
+[[agents]]
+id = "complychain-monitor-agent"
+name = "ComplyChain Monitor Agent"
+description = "Monitors Solana blockchain transactions for compliance violations in real-time"
+version = "1.0.0"
+runtime = "executable"
+executable = "node monitor-agent-mcp.js"
+working_directory = "."
+capabilities = [
+    "blockchain-monitoring",
+    "transaction-parsing", 
+    "real-time-streaming",
+    "wallet-tracking"
+]
+tags = ["compliance", "blockchain", "monitoring", "solana"]
+pricing = {
+    model = "usage",
+    rate = 0.1,
+    currency = "SOL",
+    unit = "day"
+}
+
+[[agents]]
+id = "complychain-analyst-agent"
+name = "ComplyChain Analyst Agent"
+description = "AI-powered compliance analysis using Mistral AI for OFAC, FATF, and BSA regulations"
+version = "1.0.0"
+runtime = "executable"
+executable = "node analyst-agent-mcp.js"
+working_directory = "."
+capabilities = [
+    "ai-analysis",
+    "compliance-checking",
+    "risk-assessment",
+    "regulatory-screening"
+]
+tags = ["compliance", "ai", "analysis", "regulations"]
+pricing = {
+    model = "per-request",
+    rate = 0.01,
+    currency = "SOL",
+    unit = "request"
+}
+
+[[agents]]
+id = "complychain-auditor-agent"
+name = "ComplyChain Auditor Agent"
+description = "Generates compliance reports and mints NFT certificates via Crossmint"
+version = "1.0.0"
+runtime = "executable"
+executable = "node auditor-agent-mcp.js"
+working_directory = "."
+capabilities = [
+    "report-generation",
+    "nft-minting",
+    "compliance-certification",
+    "audit-trail-creation"
+]
+tags = ["compliance", "reporting", "nft", "certification"]
+pricing = {
+    model = "tiered",
+    tiers = [
+        { max_requests = 10, rate = 0.05, currency = "SOL" },
+        { max_requests = 50, rate = 0.1, currency = "SOL" },
+        { max_requests = 100, rate = 0.2, currency = "SOL" }
+    ]
+}

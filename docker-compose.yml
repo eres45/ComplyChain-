@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  complychain:
+    build: .
+    container_name: complychain-app
+    ports:
+      - "3000:3000"  # Frontend
+      - "3001:3001"  # Backend API
+    environment:
+      - NODE_ENV=production
+      - SOLANA_RPC_URL=https://api.devnet.solana.com
+      - CORAL_SERVER_URL=http://localhost:5555
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY}
+      - CROSSMINT_API_KEY=${CROSSMINT_API_KEY}
+      - CROSSMINT_PROJECT_ID=${CROSSMINT_PROJECT_ID}
+    volumes:
+      - ./backend/logs:/app/backend/logs
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - complychain-network
+
+  coral-server:
+    image: ghcr.io/coral-protocol/coral-server:latest
+    container_name: coral-server
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./coral-agents/registry.toml:/config/registry.toml
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    networks:
+      - complychain-network
+    depends_on:
+      - complychain
+
+  coral-studio:
+    image: ghcr.io/coral-protocol/coral-studio:latest
+    container_name: coral-studio
+    ports:
+      - "3002:3000"  # Coral Studio on different port
+    environment:
+      - CORAL_SERVER_URL=http://coral-server:5555
+    restart: unless-stopped
+    networks:
+      - complychain-network
+    depends_on:
+      - coral-server
+
+  redis:
+    image: redis:7-alpine
+    container_name: complychain-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - complychain-network
+
+networks:
+  complychain-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+    driver: local

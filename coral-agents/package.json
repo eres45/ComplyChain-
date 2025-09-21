@@ -1,0 +1,22 @@
+{
+  "name": "complychain-coral-agents",
+  "version": "1.0.0",
+  "description": "ComplyChain AI agents compatible with Coral Protocol MCP",
+  "type": "module",
+  "main": "monitor-agent-mcp.js",
+  "scripts": {
+    "monitor": "node monitor-agent-mcp.js",
+    "analyst": "node analyst-agent-mcp.js",
+    "auditor": "node auditor-agent-mcp.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@solana/web3.js": "^1.95.0",
+    "axios": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "ComplyChain Team",
+  "license": "MIT"
+}
