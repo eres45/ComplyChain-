@@ -330,4 +330,4 @@ complychain/
 
 ---
 
-**Built for the Coral Protocol Hackathon 2024**
+**Built for the Coral Protocol Hackathon 2025**
